@@ -1,12 +1,38 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    /* Variáveis de cor de fundo */
+
+  --white-back: #f4f4f4;
+  --dark-back: #171514;
+  --monster-color: #685192;
+  
+  /* Variáveis de Tamanho de Texto */
+  --font-size-small: 0.875rem;  /* 14px */
+  --font-size-regular: 1rem;    /* 16px */
+  --font-size-medium: 1.25rem;  /* 20px */
+  --font-size-large: 1.5rem;    /* 24px */
+  --font-size-xlarge: 2rem;     /* 32px */
+  --font-size-xxlarge: 2.5rem;  /* 40px */
+  --font-size-heading: 3rem;    /* 48px */
+}
+
+@font-face {
+  font-family: 'font-autography';
+  src: url('../public/fonts/Autography.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'font-monster';
+  src: url('../public/fonts/Breathney.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'font-monster-v2';
+  src: url('../public/fonts/Devil.otf') format('opentype');
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #171514 ;
+    --foreground: #f4f4f4;
   }
 }
 
@@ -14,6 +40,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {

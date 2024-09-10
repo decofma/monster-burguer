@@ -1,0 +1,34 @@
+.card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .card img {
+    max-width: 100%;
+    border-radius: 8px;
+    height: auto;
+  }
+  
+  .card h3 {
+    font-size: var(--font-size-xxlarge);
+    margin: 1rem 0;
+  }
+  
+  .card p {
+    font-size: var(--font-size-medium);
+  }
+
+  .card__button{
+    font-size: var(--font-size-large);
+    margin: 1rem;
+    padding: 10px;
+    float: inline-end;
+    background-color: var(--monster-color);
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+
+  }
+  
