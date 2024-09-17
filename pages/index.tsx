@@ -70,11 +70,11 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <div className={styles.history__background__container}>
+      <div className={styles.logo__background__container}>
             <img
               src="/logo-dark.png"
               alt="Hambúrguer"
-              className={styles.history__background__container__img}
+              className={styles.logo__background__container__img}
             />
           </div>
       <section id="nossas-unidades" className={styles.section}>

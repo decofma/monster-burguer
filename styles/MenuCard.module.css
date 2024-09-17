@@ -29,6 +29,7 @@
     border-radius: 25px;
     border: none;
     cursor: pointer;
-
   }
-  
+  .card img :hover{
+    animation: zoomer 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
