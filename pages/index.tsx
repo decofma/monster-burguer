@@ -1,6 +1,7 @@
 import Navbar from '@/components/navbar/navbar';
 import MenuCard from '@/components/menucard/menucard';
 import styles from '@/styles/Home.module.css';
+import Link from 'next/link';
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
 
       <section id="nossa-historia" className={styles.section}>
         <div className={styles.history__container}>
+        
           <div className={styles.history__text__container}>
             <h2 className={styles.title}>Nossa História </h2>
             <p className={styles.paragraph}>
@@ -34,13 +36,7 @@ const Home = () => {
               Nosso objetivo nunca foi apenas alimentar, mas provocar emoções, despertar sorrisos e, claro, fazer sua mente explodir com sabores únicos. Seja em uma noite com amigos ou em um almoço rápido, cada visita à Monster Burguer é uma nova descoberta. Estamos apenas começando nossa jornada, e o melhor ainda está por vir.
             </p>
           </div>
-          <div className={styles.history__background__container}>
-            <img
-              src="/logo-dark.png"
-              alt="Hambúrguer"
-              className={styles.history__background__container__img}
-            />
-          </div>
+          
         </div>
       </section>
 
@@ -74,7 +70,13 @@ const Home = () => {
           </div>
         </div>
       </section>
-
+      <div className={styles.history__background__container}>
+            <img
+              src="/logo-dark.png"
+              alt="Hambúrguer"
+              className={styles.history__background__container__img}
+            />
+          </div>
       <section id="nossas-unidades" className={styles.section}>
         <div className={styles.shops__container}>
           <h2 className={styles.title}>Nossas Unidades</h2>
@@ -85,8 +87,29 @@ const Home = () => {
 
         </div>
       </section>
-      <footer>
-        footer test
+      <footer className={styles.footer__container}>
+        <section>
+
+        <h3 className={styles.subtitle}>
+          Institucional
+        </h3>
+        <ul className={styles.menu}>
+          <li><Link href="#nossa-historia">Nossa História</Link></li>
+          <li><Link href="#cardapio">Cardápio</Link></li>
+          <li><Link href="#nossas-unidades">Nossas Unidades</Link></li>
+        </ul> 
+        </section>
+        <section>
+
+        <h3  className={styles.subtitle}>
+          Redes Sociais
+        </h3>
+        <ul className={styles.menu}>
+          <li><Link href="https://www.instagram.com/" target='_blank'>Instagram</Link></li>
+          <li><Link href="https://www.facebook.com/" target='_blank'>Facebook</Link></li>
+          <li><Link href="https://www.tiktok.com/" target='_blank'>Tiktok</Link></li>
+        </ul> 
+        </section>
       </footer>
     </>
   );

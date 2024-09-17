@@ -4,6 +4,7 @@
   --white-back: #f4f4f4;
   --dark-back: #171514;
   --monster-color: #685192;
+  --monster-green: #459945;
   
   /* Variáveis de Tamanho de Texto */
   --font-size-small: 0.875rem;  /* 14px */
@@ -62,8 +63,8 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+  @media (prefers-color-scheme: dark) {
+    html {
+      color-scheme: dark;
+    }
   }
-}

@@ -21,7 +21,7 @@
   }
 
   .card__button{
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-medium);
     margin: 1rem;
     padding: 10px;
     float: inline-end;
