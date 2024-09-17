@@ -18,6 +18,9 @@
   
   .card p {
     font-size: var(--font-size-medium);
+    @media (width <=  480px) {
+      font-size: var(--font-size-regular);
+    }
   }
 
   .card__button{

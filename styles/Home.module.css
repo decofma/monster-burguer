@@ -3,16 +3,28 @@
   padding: 1rem;
   font-family: 'font-monster-v2';
   text-transform: uppercase;
+  @media (width <=  480px) {
+    font-size: var(--font-size-large);
+  }
 }
+
 .subtitle {
   font-size: var(--font-size-medium);
   padding: 1rem;
   font-family: 'font-monster-v2';
   text-transform: uppercase;
+  @media (width <=  480px) {
+    font-size: var(--font-size-regular);
+    padding: 0;
+  }
 }
 .paragraph {
   font-size: var(--font-size-large);
   padding: 1rem;
+  @media (width <=  480px) {
+    font-size: var(--font-size-medium);
+    padding: 0;
+  }
 }
 .section {
   position: relative;
@@ -45,7 +57,10 @@
   padding: 0 1rem;
   text-shadow: 3px 3px 5px var(--dark-back);
   @media (width <=  768px) {
-    font-size: 3rem;
+    font-size: var(--font-size-heading);
+  }
+  @media (width <=  480px) {
+    font-size: var(--font-size-large);
   }
 }
 
@@ -66,6 +81,9 @@
   align-items: center;
   padding: 2rem;
   height: 400px;
+  @media (width <=  480px) {
+    height: 300px;
+  }
 }
 
 .history__fans__container img {
@@ -79,6 +97,10 @@
   @media (width <= 768px) {
     width: 500px;
   }
+  @media (width <=  480px) {
+    width: 250px;
+    left: -40%; 
+  }
 }
 
 .history__fans__container__right {
@@ -87,6 +109,10 @@
   transform: rotate(270deg);
   @media (width <= 768px) {
     width: 400px;
+  }
+  @media (width <=  480px) {
+    width: 200px;
+    right: -40%; 
   }
 }
 .logo__background__container {
@@ -111,6 +137,10 @@
   padding: 2rem;
   display: flex;
   flex-direction: column;
+  @media (width <=  480px) {
+    padding: 0;
+    margin-block: 2rem;
+  }
 }
 .menu__container__contents{
  width: 70%;
@@ -142,6 +172,9 @@
 .listItem {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+  @media (width <= 480px) {
+    font-size: var(--font-size-regular);
+  }
 }
 
 .shops__container{
@@ -154,6 +187,7 @@
   justify-content: space-evenly;
   padding: 2rem;
 }
+
 .menu {
   list-style: none;
   display: flex;
